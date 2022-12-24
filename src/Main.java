@@ -18,5 +18,7 @@ public class Main {
         System.out.println(bmw_Z8);
         System.out.println(kiaSportageFour);
         System.out.println(hyundayAvante);*/
+       Car.swapRubber(ladaGranta.getSummerTiresCheck());
+
     }
 }

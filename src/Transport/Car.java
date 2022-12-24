@@ -12,8 +12,26 @@ public class Car {
     private final String bodyType;
     private final int registrationNumber;
     private int numberSeats;
-    private boolean summerTiresCheck;
+    private static boolean summerTiresCheck;
 
+    public static void swapRubber(boolean rubber){
+        if (rubber == true){
+            rubber = false;
+            System.out.println("Резина теперь заменена");
+        }else{
+            System.out.println("Резина уже заменена");
+        }
+
+    }
+
+    public class Key{
+        private boolean remoteStart;
+        private boolean keylessEntry;
+        public Key(boolean remoteStart, boolean keylessEntry) {
+            this.remoteStart = remoteStart;
+            this.keylessEntry = keylessEntry;
+        }
+    }
 
     public Car(String brand,String model, double engineVolume, String color, int year, String country,
                String transmission, String bodyType,int registrationNumber,int numberSeats, boolean summerTiresCheck){
@@ -108,7 +126,7 @@ public class Car {
         return numberSeats;
     }
 
-    public boolean isSummerTiresCheck() {
+    public boolean getSummerTiresCheck() {
         return summerTiresCheck;
     }
 
